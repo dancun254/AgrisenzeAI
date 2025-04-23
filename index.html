@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>AgrisenzeAI</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    /* Optional: include this if not already in style.css */
+    .nav-links a {
+      color: black;
+      text-decoration: none;
+      margin: 0 10px;
+      font-weight: 500;
+      transition: color 0.3s ease;
+    }
+
+    .nav-links a.active {
+      color: #10b981; /* green */
+    }
+
+    .demo-btn {
+      padding: 0.5rem 1rem;
+      background-color: #10b981;
+      color: white !important;
+      border-radius: 8px;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <header class="navbar">
+    <div class="logo">AGRISENZE</div>
+    <nav class="nav-links">
+      <a href="Home.html" class="active">Home</a>
+      <a href="Problem.html">Problem</a>
+      <a href="Solution.html">Solutions</a>
+      <a href="Contact.html">Contact</a>
+      <a href="#" class="demo-btn">Request Demo</a>
+    </nav>
+  </header>
+
+  <script>
+    // Get all nav links except the demo button
+    const links = document.querySelectorAll('.nav-links a:not(.demo-btn)');
+
+    links.forEach(link => {
+      link.addEventListener('click', function () {
+        links.forEach(l => l.classList.remove('active'));
+        this.classList.add('active');
+      });
+    });
+  </script>
+</body>
+  <section class="hero-section">
+    <div class="hero-content">
+      <div class="hero-text">
+        <h1>Next-Gen Precision Agriculture</h1>
+        <p class="subheading">Empowering Sustainable Farming with Real-Time Soil Monitoring</p>
+        <blockquote>"If you can't measure it, you can't control it"</blockquote>
+        <p class="description">
+          At AgriSenze, we provide the tools to accurately measure soil nitrates, empowering
+          farmers to reduce fertilizer use, save the environment, and avoid over-fertilization.
+          The result? Higher yields and more sustainable farming practices.
+        </p>
+        <div class="hero-buttons">
+          <a href="#" class="btn green">Explore Solutions →</a>
+          <a href="#" class="btn outline">Request a Demo</a>
+        </div>
+      </div>
+      <div class="hero-image">
+        <img src="https://cdn.prod.website-files.com/66a3ee85312a9ce75b4f267e/66a7f1f998b02a5801504afe_AGRSNZ%20Problem%20Description%20150%20ppi-p-2000.png" alt="Agrisenze Diagram" />
+      </div>
+    </div>
+  </section>
+</body>
+<section class="problem-section">
+    <div class="problem-content">
+      <div class="problem-text">
+        <h2>Understanding the Problem</h2>
+        <p>
+          Nitrates naturally cycle through the environment fixed in the soil, broken down, and
+          taken up by plants. But human activities—like burning fossil fuels and using fertilizers
+          disrupt this natural balance. As a result, nitrates build up in the soil, seep into water
+          sources, and cause eutrophication, which harms aquatic life.
+        </p>
+        <p>
+          Fertilizers have boosted crop yields, but over-fertilization is a major issue. It harms the
+          environment and damages crops, too. So, how do we keep feeding people while preserving
+          nature? The answer lies in precision farming using just the right amount of fertilizer. To
+          do that, we need to constantly measure nitrates in the soil.
+        </p>
+        <a href="#" class="btn dark">Learn More About the Problem</a>
+      </div>
+      <div class="problem-image">
+        <img src="https://cdn.prod.website-files.com/66a3ee85312a9ce75b4f267e/66a7f1f998b02a5801504afe_AGRSNZ%20Problem%20Description%20150%20ppi-p-2000.png" alt="Nitrogen Cycle Diagram" />
+      </div>
+    </div>
+  </section>
+  <section class="precision-farming">
+    <div class="container">
+      <div class="text-center">
+        <h2>Precision Farming with AgriSenze</h2>
+        <p class="subtitle">AgriSenze offers a real-time soil nitrate monitoring system powered by advanced sensors and smart technology.</p>
+      </div>
+      <div class="content">
+        <div class="image">
+          <img src="https://cdn.prod.website-files.com/66a3ee85312a9ce75b4f267e/66b44fa4e9c053d53fa57641_Screenshot%202024-08-07%20at%2021.50.44-p-1080.jpg" alt="Live Soil Monitoring Sensor Array">
+        </div>
+        <div class="info">
+          <p class="description">
+            This technology provides precise nitrate measurements directly from the field, allowing farmers to apply just the right amount of fertilizer. It optimizes crop yields and minimizes environmental impact by giving farmers the tools they need to make data-driven decisions.
+          </p>
+          <div class="benefits">
+            <h3>Key Benefits:</h3>
+            <ul>
+              <li>Real-time monitoring of soil nitrate levels</li>
+              <li>Reduction of fertilizer use by up to 50%</li>
+              <li>Increased crop yields by 10-20%</li>
+              <li>Protection of water resources from nitrate pollution</li>
+              <li>Data-driven decision making for sustainable farming</li>
+            </ul>
+          </div>
+          <a href="#" class="btn">Explore Our Solutions</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="features-section">
+    <div class="features-container">
+      <h2 class="features-title">Key Features of AgriSenze AI Technology</h2>
+      <div class="features-grid">
+        
+        <div class="feature-card">
+          <div class="feature-icon">🌿</div>
+          <h3 class="feature-heading">IoT Soil Health Sensor</h3>
+          <p class="feature-text">
+            Our sensors monitor nitrate levels, pH, moisture, and temperature directly in the soil to prevent over-fertilization a major contributor to water pollution.
+          </p>
+        </div>
+  
+        <div class="feature-card">
+          <div class="feature-icon">📊</div>
+          <h3 class="feature-heading">Predictive Analytics Engine</h3>
+          <p class="feature-text">
+            AgriSenze AI uses machine learning to analyze real-time and historical data, including weather patterns and pest activity, to provide predictive insights on the optimal fertilization and irrigation schedules.
+          </p>
+        </div>
+  
+        <div class="feature-card">
+          <div class="feature-icon">📱</div>
+          <h3 class="feature-heading">Mobile & Web Dashboards</h3>
+          <p class="feature-text">
+            Farmers can easily access real-time data and detailed insights from our mobile and web dashboards, empowering them to make quick, informed decisions.
+          </p>
+        </div>
+  
+        <div class="feature-card">
+          <div class="feature-icon">⚙️</div>
+          <h3 class="feature-heading">Actionable Alerts</h3>
+          <p class="feature-text">
+            Receive timely alerts about when to fertilize, irrigate, or act on pest risks to improve crop health and yield.
+          </p>
+        </div>
+  
+      </div>
+    </div>
+  </section>
+  <section class="impact-section">
+    <div class="impact-container">
+      <h2 class="impact-title">Impact on Farming</h2>
+      <p class="impact-subtitle">
+        Our technology is making a real difference in agriculture around the world.
+      </p>
+  
+      <div class="impact-grid">
+  
+        <div class="impact-card top-border-blue">
+          <h3 class="impact-heading">Cost Savings</h3>
+          <p>Farmers can cut fertilizer costs by up to 50%, which offers significant financial relief.</p>
+        </div>
+  
+        <div class="impact-card top-border-green">
+          <h3 class="impact-heading">Environmental Protection</h3>
+          <p>By reducing nitrate runoff and minimizing water pollution, AgriSenze helps protect our environment and reduce agriculture's carbon footprint.</p>
+        </div>
+  
+        <div class="impact-card top-border-lightblue">
+          <h3 class="impact-heading">Improved Yields</h3>
+          <p>Our platform helps farmers boost their yields by 10–20%, leading to higher food production and greater profitability.</p>
+        </div>
+  
+        <div class="impact-card top-border-darkgreen">
+          <h3 class="impact-heading">Enhanced Sustainability</h3>
+          <p>AgriSenze AI supports sustainable farming practices, helping to ensure food security and mitigate climate change for future generations.</p>
+        </div>
+  
+        <div class="impact-card full">
+          <h3 class="impact-heading">Our Commitment to Innovation</h3>
+          <p>We continuously refine our technology through field trials, ensuring our system meets the highest standards of performance. This commitment to innovation means that AgriSenze AI is always evolving, becoming more efficient, and providing better results for farmers.</p>
+        </div>
+  
+      </div>
+    </div>
+  </section>
+  <footer class="footer-section">
+    <div class="contact-cta">
+      <h2>Get in Touch with Us</h2>
+      <p>
+        Curious about how AgriSenze can help your farm? Contact us today to learn more about our innovative technology and solutions.
+      </p>
+      <a href="#" class="contact-button">Contact Us Today →</a>
+    </div>
+  
+    <div class="footer-content">
+      <div class="footer-box">
+        <h3><span class="leaf-icon">🍃</span> AgriSenze</h3>
+        <p>Empowering sustainable farming with real-time soil monitoring and AI-powered insights.</p>
+        <p>📧 info@agrisenzeai.com</p>
+        <p>📍 Mumbi Rd, 10100 Nyeri Town, Kenya</p>
+      </div>
+  
+      <div class="footer-box">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Problem</a></li>
+          <li><a href="#">Solutions</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+  
+      <div class="footer-box">
+        <h4>Our Mission</h4>
+        <p>
+          At AgriSenze, we're committed to revolutionizing agriculture through precision farming technology that helps farmers reduce waste, optimize yields, and protect our environment.
+        </p>
+      </div>
+    </div>
+  
+    <div class="footer-bottom">
+      <p>© 2025 AgriSenze. All rights reserved.</p>
+    </div>
+  </footer>
+</html>
+
+  

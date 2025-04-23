@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>AgrisenzeAI</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    /* Optional: include this if not already in style.css */
+    .nav-links a {
+      color: black;
+      text-decoration: none;
+      margin: 0 10px;
+      font-weight: 500;
+      transition: color 0.3s ease;
+    }
+
+    .nav-links a.active {
+      color: #10b981; /* green */
+    }
+
+    .demo-btn {
+      padding: 0.5rem 1rem;
+      background-color: #10b981;
+      color: white !important;
+      border-radius: 8px;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <header class="navbar">
+    <div class="logo">AGRISENZE</div>
+    <nav class="nav-links">
+      <a href="Home.html">Home</a>
+      <a href="Problem.html">Problem</a>
+      <a href="Solution.html"class="active">Solutions</a>
+      <a href="Contact.html">Contact</a>
+      <a href="#" class="demo-btn">Request Demo</a>
+    </nav>
+  </header>
+
+  <script>
+    // Get all nav links except the demo button
+    const links = document.querySelectorAll('.nav-links a:not(.demo-btn)');
+
+    links.forEach(link => {
+      link.addEventListener('click', function () {
+        links.forEach(l => l.classList.remove('active'));
+        this.classList.add('active');
+      });
+    });
+  </script>
+</body>
+<section class="solution-section">
+    <div class="solution-container">
+      <h2>Our Solution: Precision Farming Powered by<br />Real-Time Data</h2>
+      <p>
+        At AgriSenze, we're revolutionizing the way farmers manage their crops,
+        reduce waste, and protect the environment. Our solution is simple: real-time
+        soil health monitoring, enabled by cutting-edge technology that empowers
+        farmers to make smarter, more sustainable decisions.
+      </p>
+      <a href="#" class="demo-button">Request a Demo</a>
+    </div>
+  </section>
+  
+  <section class="video-section">
+    <div class="video-content">
+      <h2>See AgriSenze in Action</h2>
+      <p>Watch our demo video to see how our technology works in real-world farming scenarios.</p>
+      
+      <div class="video-wrapper">
+        <iframe width="100%" height="400" 
+                src="https://www.youtube.com/embed/4ksn5H9zzbg" 
+                title="Precision Farming with Agrisenze" 
+                frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen>
+        </iframe>
+      </div>
+    </div>
+  </section>
+  
+  <section class="how-it-works">
+    <div class="container">
+      <h2>Here's how it works</h2>
+  
+      <div class="step-box">
+        <div class="step-header">
+          <div class="step-number">1</div>
+          <h3>Real-Time Soil Health Monitoring</h3>
+        </div>
+        <p>The core of our solution is a network of advanced IoT sensors placed directly in the soil. These sensors continuously monitor key soil health parameters, including:</p>
+        <ul>
+          <li>Nitrate levels</li>
+          <li>Soil moisture</li>
+          <li>pH levels</li>
+          <li>Temperature</li>
+        </ul>
+        <p>By constantly gathering this data, we provide farmers with a real-time view of their soil's health, enabling them to make data-driven decisions about fertilization, irrigation, and crop management.</p>
+      </div>
+  
+      <div class="step-box">
+        <div class="step-header">
+          <div class="step-number">2</div>
+          <h3>The Power of Predictive Analytics</h3>
+        </div>
+        <p>Our Predictive Analytics Engine, powered by machine learning (ML), is designed to analyze both historical and real-time data. It combines information from our soil sensors, weather patterns, pest activity, and other relevant factors to provide farmers with actionable insights.</p>
+        <p>This predictive capability means farmers can forecast optimal fertilization schedules, predict irrigation needs, and receive alerts for potential pest risks or other threats to crop health.</p>
+      </div>
+  
+      <div class="step-box">
+        <div class="step-header">
+          <div class="step-number">3</div>
+          <h3>Data-Driven Fertilization Recommendations</h3>
+        </div>
+        <p>Over-fertilization is one of the major contributors to environmental pollution, but with AgriSenze's system, farmers can apply the right amount of fertilizer at the right time. Our system provides precise recommendations on fertilizer types and quantities based on real-time soil data.</p>
+        <p>This not only helps save money by reducing unnecessary fertilizer costs, but it also ensures optimal crop health and better yields.</p>
+      </div>
+
+      <div class="step-box">
+        <div class="step-header">
+          <div class="step-number">4</div>
+          <h3>Mobile & Web Dashboard for Easy Access</h3>
+        </div>
+        <p>All the data gathered by our sensors is integrated into an intuitive, user-friendly dashboard, accessible via both mobile and web apps. Through this dashboard, farmers can monitor soil health in real-time, track historical data, get actionable alerts, and visualize predictive insights.</p>
+        <p>Whether in the field or in the office, farmers can make informed, data-backed decisions at any time.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="ai-tech-section">
+    <div class="container">
+      <h2>AgriSenze AI Technology</h2>
+      <p>
+        Our cutting-edge agritech platform integrates machine learning and IoT technology to
+        help farmers maximize crop yields while minimizing resource use.
+      </p>
+    </div>
+  </section>
+  
+  <section class="precision-ai-section">
+    <div class="container">
+      <div class="content-wrapper">
+        <div class="image-side">
+          <img src="https://cdn.prod.website-files.com/66a3ee85312a9ce75b4f267e/66a842e92e087f3815f59757_System%20No%20BG%20H1200px.png" alt="AgriSenze AI Illustration">
+        </div>
+        <div class="text-side">
+          <h3>AgriSenze AI: The Future of Precision Agriculture</h3>
+          <p>AgriSenze AI takes our solution to the next level with features like:</p>
+          <ul>
+            <li><strong>Real-time monitoring:</strong> AI analyzes data from soil sensors, weather stations, and pest trackers to deliver real-time insights.</li>
+            <li><strong>Predictive analytics:</strong> AgriSenze AI leverages historical data and real-time conditions to forecast future needs.</li>
+            <li><strong>Smarter decision-making:</strong> AI helps farmers make data-driven decisions by recommending the most efficient strategies.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Solution – Cloud‑Based Data Integration -->
+<section class="solution-section">
+    <div class="solution-wrapper">
+      
+      <!-- Left: text -->
+      <div class="solution-text">
+        <h2>Cloud‑Based Data Integration</h2>
+  
+        <p>
+          AgriSenze's system is cloud‑based, meaning that all data collected from
+          the field is instantly uploaded to our secure cloud platform. This
+          allows farmers to:
+        </p>
+  
+        <ul>
+          <li>Access real‑time data from anywhere, anytime.</li>
+          <li>Make quick, informed decisions with instant updates and alerts.</li>
+          <li>Share data with team members for collaborative decision‑making.</li>
+        </ul>
+      </div>
+  
+      <!-- Right: diagram -->
+      <div class="solution-image">
+        <img
+          src="https://cdn.prod.website-files.com/66a3ee85312a9ce75b4f267e/66b4231b977887d53362b912_Ecotrack%20Solution%20Overview%402x-p-800.png"
+          alt="Cloud‑based sensor and soil system diagram"
+        />
+      </div>
+    </div>
+  </section>
+  <!-- ================= Access Data Section ================ -->
+<section class="dashboard-section">
+    <div class="dashboard-intro">
+      <h2>Access Data Anytime, Anywhere</h2>
+      <p>Our user‑friendly dashboards give you complete control over your farm data.</p>
+    </div>
+  
+    <div class="dashboard-wrapper">
+      <!-- Image column -->
+      <figure class="dashboard-image">
+        <img
+          src="https://cdn.prod.website-files.com/66a3ee85312a9ce75b4f267e/66a84685400ac9bd80a721fd_Agrisenze%20mockup%20on%20screen%20Compressed-p-500.jpg"
+          alt="Farm data dashboard shown on a laptop"
+        />
+      </figure>
+  
+      <!-- Text column -->
+      <div class="dashboard-content">
+        <h3>Powerful Insights in Your Pocket</h3>
+        <p>
+          With the AgriSenze mobile and web dashboards, you'll have easy access to:
+        </p>
+  
+        <ol class="dashboard-list">
+          <li>
+            <strong>Real‑time soil data</strong> – Monitor nitrate levels, moisture,
+            pH, and temperature directly from your smartphone.
+          </li>
+  
+          <li>
+            <strong>Custom alerts</strong> – Receive notifications when your crops
+            need attention, from fertilization timing to irrigation needs.
+          </li>
+  
+          <li>
+            <strong>Historical data analysis</strong> – Track trends over time to
+            optimize your farming practices and improve yields year after year.
+          </li>
+  
+          <li>
+            <strong>AI‑powered recommendations</strong> – Get tailored suggestions
+            for optimizing fertilizer use, irrigation schedules, and more.
+          </li>
+        </ol>
+  
+        <p class="dashboard-note">
+          Our intuitive interface makes it easy to navigate between different data
+          views, allowing you to quickly access the information you need to make
+          informed decisions for your farm.
+        </p>
+      </div>
+    </div>
+  </section>
+  <!-- ================== AgriSenze Impact Section ================== -->
+<section class="impact-section">
+    <!-- Intro -->
+    <div class="impact-intro">
+      <h2>The AgriSenze Impact</h2>
+      <p>Our technology is designed to solve some of agriculture's biggest challenges.</p>
+    </div>
+  
+    <!-- Main grid -->
+    <div class="impact-wrapper">
+      <!-- Left column: stats + sustainability block -->
+      <div class="impact-stats">
+        <div class="stat-box stat-green-dark">
+          <span class="stat-value">50%</span>
+          <span class="stat-label">Reduction in Fertilizer Costs</span>
+        </div>
+  
+        <div class="stat-box stat-green">
+          <span class="stat-value">10‑20%</span>
+          <span class="stat-label">Increase in Crop Yields</span>
+        </div>
+  
+        <div class="stat-box stat-blue">
+          <span class="stat-value">40%</span>
+          <span class="stat-label">Reduction in Water Pollution</span>
+        </div>
+  
+        <div class="stat-box stat-teal-dark">
+          <span class="stat-value">30%</span>
+          <span class="stat-label">Lower Carbon Footprint</span>
+        </div>
+  
+        <!-- Sustainability text card -->
+        <div class="sustainability-card">
+          <h3>Sustainability for the Future</h3>
+          <p>
+            By using precision agriculture and AI‑powered insights, AgriSenze is
+            helping farmers boost productivity, reduce costs, and protect the
+            planet for future generations.
+          </p>
+        </div>
+      </div>
+  
+      <!-- Right column: image -->
+      <figure class="impact-image">
+        <img
+          src="https://cdn.prod.website-files.com/66a3ee85312a9ce75b4f267e/66b425d7a20aedac9d9ea126_MicrosoftTeams-image%20(2).jpg"
+          alt="Farmers using AgriSenze technology in a field"
+        />
+      </figure>
+    </div>
+  </section>
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>AgriSenze Contact Section</title>
+      <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+      <section class="contact-section">
+          <div class="contact-header">
+              <h2>Get in Touch with Us</h2>
+              <p>Curious about how AgriSenze can help your farm? Contact us today to learn more about<br>our innovative technology and solutions.</p>
+              <a href="#" class="contact-btn">Contact Us Today →</a>
+          </div>
+  
+          <div class="footer-grid">
+              <div class="footer-col">
+                  <h3 class="logo">🌿 AgriSenze</h3>
+                  <p>Empowering sustainable farming with real-time soil monitoring and AI-powered insights.</p>
+                  <p>📧 <a href="mailto:info@agrisenzeai.com">info@agrisenzeai.com</a></p>
+                  <p>📍 Mumbi Rd, 10100 Nyeri Town, Kenya</p>
+              </div>
+  
+              <div class="footer-col">
+                  <h4>Quick Links</h4>
+                  <ul>
+                      <li><a href="#">Home</a></li>
+                      <li><a href="#">Problem</a></li>
+                      <li><a href="#">Solutions</a></li>
+                      <li><a href="#">Contact</a></li>
+                  </ul>
+              </div>
+  
+              <div class="footer-col">
+                  <h4>Our Mission</h4>
+                  <p>At AgriSenze, we're committed to revolutionizing agriculture through precision farming technology that helps farmers reduce waste, optimize yields, and protect our environment.</p>
+              </div>
+          </div>
+  
+          <div class="footer-bottom">
+              <p>© 2025 AgriSenze. All rights reserved.</p>
+          </div>
+      </section>
+  </body>
+  </html>
+  
+  
+  
+  
+  
+  

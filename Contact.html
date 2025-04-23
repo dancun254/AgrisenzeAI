@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>AgrisenzeAI</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    /* Optional: include this if not already in style.css */
+    .nav-links a {
+      color: black;
+      text-decoration: none;
+      margin: 0 10px;
+      font-weight: 500;
+      transition: color 0.3s ease;
+    }
+
+    .nav-links a.active {
+      color: #10b981; /* green */
+    }
+
+    .demo-btn {
+      padding: 0.5rem 1rem;
+      background-color: #10b981;
+      color: white !important;
+      border-radius: 8px;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <header class="navbar">
+    <div class="logo">AGRISENZE</div>
+    <nav class="nav-links">
+      <a href="Home.html">Home</a>
+      <a href="Problem.html">Problem</a>
+      <a href="Solution.html">Solutions</a>
+      <a href="Contact.html"class="active">Contact</a>
+      <a href="#" class="demo-btn">Request Demo</a>
+    </nav>
+  </header>
+
+  <script>
+    // Get all nav links except the demo button
+    const links = document.querySelectorAll('.nav-links a:not(.demo-btn)');
+
+    links.forEach(link => {
+      link.addEventListener('click', function () {
+        links.forEach(l => l.classList.remove('active'));
+        this.classList.add('active');
+      });
+    });
+  </script>
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Intro Section</title>
+    <link rel="stylesheet" href="intro-style.css">
+  </head>
+  <body>
+    <section class="intro-contact-section">
+      <div class="intro-container">
+        <h2>Get in Touch with AgriSenze</h2>
+        <p class="main-text">
+          At AgriSenze, we're committed to helping farmers around the world harness the power of precision agriculture for sustainable farming. 
+          If you're ready to revolutionize your farm with real-time data and smart insights, we'd love to hear from you.
+        </p>
+        <p class="sub-text">
+          Whether you have questions about our technology, want to schedule a demo, or need assistance, our team is here to help. 
+          Let's work together to build a sustainable, efficient, and more profitable farming future.
+        </p>
+      </div>
+    </section>
+  </body>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact Info Section</title>
+  <link rel="stylesheet" href="contact-info.css"/>
+</head>
+<body>
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Contact Section</title>
+      <link rel="stylesheet" href="contact.css" />
+    </head>
+    <body>
+    
+    <section class="contact-section">
+      <h2 class="contact-heading">Contact Information:</h2>
+      <div class="contact-container">
+        
+        <div class="contact-card">
+          <div class="icon-text">
+            <span class="icon">📧</span>
+            <h3>Email Us</h3>
+          </div>
+          <p>For general inquiries or support:</p>
+          <a href="mailto:info@agrisenzeai.com">info@agrisenzeai.com</a>
+        </div>
+    
+        <div class="contact-card">
+          <div class="icon-text">
+            <span class="icon">📍</span>
+            <h3>Visit Us</h3>
+          </div>
+          <p>
+            If you're in the area, or would like to learn more about AgriSenze,
+            feel free to visit our headquarters or arrange a meeting:
+          </p>
+          <p>Mumbi Rd, 10100 Nyeri Town, Kenya</p>
+        </div>
+    
+      </div>
+    </section>
+    </body>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Request a Demo</title>
+  <link rel="stylesheet" href="demo-form.css" />
+</head>
+<body>
+
+<section class="demo-section">
+  <div class="demo-container">
+    <div class="demo-image">
+      <img src="https://cdn.prod.website-files.com/66a3ee85312a9ce75b4f267e/66b417dd15e4f95a1691107a_pexels-greta-hoffman-7728876-p-500.jpg" alt="Farmer working in the field" />
+    </div>
+    <div class="demo-form-content">
+      <h2>Request a Demo or Consultation</h2>
+      <p>
+        Curious to see how AgriSenze AI can transform your farm? Let's schedule a free demo or consultation.
+        Fill out the form below to request your personalized demo or to speak with one of our experts about
+        how our technology can help optimize your farm.
+      </p>
+      <form class="demo-form">
+        <label>Name</label>
+        <input type="text" name="name" required />
+        
+        <label>Email Address</label>
+        <input type="email" name="email" required />
+        
+        <label>Phone Number</label>
+        <input type="tel" name="phone" />
+        
+        <label>Farm Size (Acres/Hectares)</label>
+        <input type="text" name="farm-size" />
+        
+        <label>Message/Questions</label>
+        <textarea name="message" rows="4"></textarea>
+        
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+</body>
+<footer class="footer">
+    <div class="footer-container">
+      <div class="footer-column">
+        <h3><span class="leaf-icon">🌿</span> AgriSenze</h3>
+        <p>Empowering sustainable farming with real-time soil monitoring and AI-powered insights.</p>
+        <p><strong>📧</strong> info@agrisenzeai.com</p>
+        <p><strong>📍</strong> Mumbi Rd, 10100 Nyeri Town, Kenya</p>
+      </div>
+  
+      <div class="footer-column">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="Home.html">Home</a></li>
+          <li><a href="Problem.html">Problem</a></li>
+          <li><a href="Solution.html">Solutions</a></li>
+          <li><a href="Contact.html">Contact</a></li>
+        </ul>
+      </div>
+  
+      <div class="footer-column">
+        <h3>Our Mission</h3>
+        <p>
+          At AgriSenze, we're committed to revolutionizing agriculture through precision farming technology that helps farmers reduce waste, optimize yields, and protect our environment.
+        </p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 AgriSenze. All rights reserved.</p>
+    </div>
+  </footer>
+    </html>    
+       
+  

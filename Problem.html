@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>AgrisenzeAI</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    /* Optional: include this if not already in style.css */
+    .nav-links a {
+      color: black;
+      text-decoration: none;
+      margin: 0 10px;
+      font-weight: 500;
+      transition: color 0.3s ease;
+    }
+
+    .nav-links a.active {
+      color: #10b981; /* green */
+    }
+
+    .demo-btn {
+      padding: 0.5rem 1rem;
+      background-color: #10b981;
+      color: white !important;
+      border-radius: 8px;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <header class="navbar">
+    <div class="logo">AGRISENZE</div>
+    <nav class="nav-links">
+      <a href="Home.html">Home</a>
+      <a href="Problem.html"class="active">Problem</a>
+      <a href="Solution.html">Solutions</a>
+      <a href="#">Contact</a>
+      <a href="#" class="demo-btn">Request Demo</a>
+    </nav>
+  </header>
+
+  <script>
+    // Get all nav links except the demo button
+    const links = document.querySelectorAll('.nav-links a:not(.demo-btn)');
+
+    links.forEach(link => {
+      link.addEventListener('click', function () {
+        links.forEach(l => l.classList.remove('active'));
+        this.classList.add('active');
+      });
+    });
+  </script>
+</body>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Problem Section</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<section class="problem-section">
+  <h1>The Challenge of Over-Fertilization and Water Pollution</h1>
+  <p>
+    Farmers face a constant struggle with over-fertilization, which leads to soil degradation and water pollution.
+    A lack of precise data often forces farmers to guess how much fertilizer is needed. This results in overuse,
+    causing harmful nitrate build-up in the soil and contaminating groundwater and waterways.
+  </p>
+</section>
+
+</body>
+<section class="nitrate-section">
+    <div class="nitrate-content">
+      <div class="nitrate-text">
+        <h2>The Nitrate Cycle Disruption</h2>
+        <p>
+          Nitrates play a vital role in plant growth, cycling naturally through the environment. They are fixed in the soil,
+          broken down, and taken up by plants. However, human activities such as burning fossil fuels and overuse of
+          fertilizers have disrupted this delicate cycle. When nitrates accumulate, they seep into the water through groundwater
+          and runoff, causing eutrophication.
+        </p>
+  
+        <div class="eutrophication-box">
+          <h3>What is Eutrophication?</h3>
+          <p>
+            Eutrophication occurs when water bodies become overly enriched with nutrients like nitrates, leading to:
+          </p>
+          <ul>
+            <li>Excessive algae growth, which blocks sunlight from reaching aquatic life.</li>
+            <li>Oxygen depletion, suffocating fish and other aquatic organisms.</li>
+          </ul>
+          <p>
+            This process doesn't just harm water bodies. Over-fertilization also damages crops, causing lower yields and wasted resources.
+          </p>
+        </div>
+      </div>
+  
+      <div class="nitrate-image">
+        <img src="https://cdn.prod.website-files.com/66a3ee85312a9ce75b4f267e/66a7f1f998b02a5801504afe_AGRSNZ%20Problem%20Description%20150%20ppi-p-2000.png" alt="Nitrate Cycle Diagram">
+      </div>
+    </div>
+  </section>
+  <section class="hidden-costs-section">
+    <div class="hidden-costs-content">
+      <div class="hidden-costs-text">
+        <h2>The Hidden Costs of Nitrate Pollution</h2>
+        <p class="subtitle">Nitrate pollution comes with both environmental and financial costs.</p>
+  
+        <div class="cost-card">
+          <h3>Environmental Damage</h3>
+          <p>In Africa, the cost of cleaning up nitrate pollution reaches up to $X billion annually.</p>
+        </div>
+  
+        <div class="cost-card">
+          <h3>Financial Burden on Farmers</h3>
+          <p>Fertilizers are expensive, and overuse leads to significant waste. Farmers often apply more fertilizer than needed, causing financial losses while damaging crops and the environment.</p>
+          <p>Governments across Africa are introducing stricter regulations to curb nitrate pollution, and compliance with these regulations adds extra financial pressure on farmers.</p>
+        </div>
+      </div>
+  
+      <div class="hidden-costs-image">
+        <img src="https://cdn.prod.website-files.com/66a3ee85312a9ce75b4f267e/66b3f996b5fa3c969650da53_pexels-nc-farm-bureau-mark-2255801-p-800.jpg" alt="Farming machinery">
+      </div>
+    </div>
+  </section>
+  <section class="precision-section">
+    <div class="container">
+      <div class="precision-grid">
+        <div class="precision-img">
+          <img src="https://cdn.prod.website-files.com/66a3ee85312a9ce75b4f267e/66b3f9dab5864b539e62696e_pexels-nc-farm-bureau-mark-2749165-p-1080.jpg" alt="Greenhouse with crops" />
+        </div>
+        <div class="precision-text">
+          <h2>The Need for Precision Agriculture</h2>
+          <p>
+            Farmers need more than guesswork. They need precise data on soil health to optimize their fertilizer use and prevent waste.
+            AgriSenze AI provides a solution by accurately measuring nitrate levels in the soil, allowing farmers to apply just the right amount of fertilizer.
+            This precision helps maintain optimal crop health, reduces waste, and ensures sustainable farming practices.
+          </p>
+          <div class="precision-box">
+            <h3>Sustainability in Agriculture</h3>
+            <p>
+              With the global population on the rise, sustainable agriculture is more important than ever.
+              However, many smallholder farmers lack access to precision farming tools that could help them optimize yields and minimize environmental harm.
+            </p>
+            <p>
+              AgriSenze AI bridges this gap by providing farmers with the tools they need to tackle these pressing issues, contributing to both global food security and environmental protection.
+            </p>
+          </div>
+          <a href="solutions.html" class="btn green">Explore Our Solutions →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="glance-section">
+    <div class="container">
+      <h2>The Problem at a Glance</h2>
+      <div class="glance-box">
+        <ul>
+          <li>Over-fertilization leads to nitrate build-up, harming both crops and the environment.</li>
+          <li>Water pollution and eutrophication damage aquatic ecosystems.</li>
+          <li>Financial losses for farmers due to wasted fertilizers.</li>
+          <li>Stricter regulations and compliance costs add financial strain for farmers in Africa.</li>
+          <li>Lack of real-time, precise data for informed decision-making.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  
+
+  <footer class="footer">
+    <div class="footer-container">
+      <!-- Column 1: Brand -->
+      <div class="footer-column">
+        <h3 class="footer-brand">
+          <i class="fa-solid fa-leaf"></i> AgriSenze
+        </h3>
+        <p>Empowering sustainable farming with real-time soil monitoring and AI-powered insights.</p>
+        <p><i class="fa-solid fa-envelope"></i> info@agrisenzeai.com</p>
+        <p><i class="fa-solid fa-location-dot"></i> Mumbi Rd, 10100 Nyeri Town, Kenya</p>
+      </div>
+  
+      <!-- Column 2: Links -->
+      <div class="footer-column">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Problem</a></li>
+          <li><a href="#">Solutions</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+  
+      <!-- Column 3: Mission -->
+      <div class="footer-column">
+        <h4>Our Mission</h4>
+        <p>At AgriSenze, we're committed to revolutionizing agriculture through precision farming technology that helps farmers reduce waste, optimize yields, and protect our environment.</p>
+      </div>
+    </div>
+  
+    <div class="footer-bottom">
+      <p>© 2025 AgriSenze. All rights reserved.</p>
+    </div>
+  </footer>
+  
+</html>
